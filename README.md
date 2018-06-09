@@ -29,7 +29,7 @@ GO_HOME = '\x1b[H'
 SCROLL = '\x1b[1000M'
 os.system("clear && printf '\e[3J'")
 ```
-### Changing line
+### Updating written line
 ```
 sys.stdout.write('\rComic.no:(%s)' %(index))
 sys.stdout.flush()
