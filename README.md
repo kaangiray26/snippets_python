@@ -40,3 +40,7 @@ page = requests.get('http://songs-tube.net/artist_letter.php?artist=%s' %(src[0]
 tree = html.fromstring(page.content)
 track = tree.xpath('/html/body/div[3]/div[3]/div[@class="songlist"]/a')
 ```
+### #5: Fix that f**king unicode error example
+```
+stdscr.addstr(0,0,u'%s'.encode('utf_8') %(artlist[artno]))
+```
