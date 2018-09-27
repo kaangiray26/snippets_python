@@ -44,3 +44,16 @@ track = tree.xpath('/html/body/div[3]/div[3]/div[@class="songlist"]/a')
 ```
 stdscr.addstr(0,0,u'%s'.encode('utf_8') %(artlist[artno]))
 ```
+### #6: Get video urls from a youtube playlist
+```
+def ytload(term):
+    urls=[" "]
+    page = requests.get(term)
+    txt=page.text
+    for i in re.findall(r'/watch\?v=(.*)',txt):
+      url="https://youtube.com/watch?=%s" %(i[0:i.find('&amp')])
+      if url not in urls:
+        urls.append(url)
+    print "%s videos found." %(len(urls)-1)
+    print "\n".join(urls)
+```
