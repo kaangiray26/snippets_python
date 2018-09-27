@@ -57,3 +57,7 @@ def ytload(term):
     print "%s videos found." %(len(urls)-1)
     print "\n".join(urls)
 ```
+### #7: youtube-dl alias usage for proper filenames
+```
+alias mp3="youtube-dl -x --audio-format mp3 -o '~/Downloads/%(title)s.%(ext)s' $1"
+```
