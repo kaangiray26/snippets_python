@@ -61,3 +61,8 @@ def ytload(term):
 ```
 alias mp3="youtube-dl -x --audio-format mp3 -o '~/Downloads/%(title)s.%(ext)s' $1"
 ```
+### #8: print improperly decoded unicode string
+```
+text="u'"+i+"'"
+exec("print %s" %(text))
+```
