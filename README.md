@@ -70,3 +70,7 @@ exec("print %s" %(text))
 ```
 exec("print %s" %(str(range(1,input("Number:")+1)).replace(", ","*")[1:-1]))
 ```
+### #10: multiple statements in one line
+```
+import requests, os; print "hello world"
+```
