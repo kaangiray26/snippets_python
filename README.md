@@ -20,7 +20,7 @@ class colors:
     end = '\033[0m'
     bold = '\033[1m'
     UNDERLINE = '\033[4m'
-print color.red + "hello" + color.end
+print colors.red + "hello" + colors.end
 ```
 ```
 ERASE_LINE = '\x1b[1J'
