@@ -65,6 +65,8 @@ alias mp3="youtube-dl -x --audio-format mp3 -o '~/Downloads/%(title)s.%(ext)s' $
 ```
 text="u'"+i+"'"
 exec("print %s" %(text))
+
+print u''.join(text).encode("utf-8")
 ```
 ### #9: single line factorial calculator
 ```
